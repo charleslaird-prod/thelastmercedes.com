@@ -197,7 +197,7 @@ nav .nav-links a:hover {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--red);
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
   transform-origin: left bottom;
   vertical-align: top;
   position: relative;
