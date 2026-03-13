@@ -11,6 +11,8 @@
   --text: #F0EDE8;
   --muted: #7A7A7A;
   --accent: #C0C0C0;
+  --red: #A02820;
+  --red-dim: #7A1E17;
 }
 
 * {
@@ -199,7 +201,7 @@ nav .nav-links a:hover {
   color: var(--muted);
   margin-bottom: 0.75rem;
   padding-left: 1rem;
-  border-left: 2px solid var(--border);
+  border-left: 2px solid var(--red-dim);
   line-height: 1.7;
 }
 
@@ -216,18 +218,18 @@ nav .nav-links a:hover {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  background: var(--text);
-  color: var(--bg);
+  background: var(--red);
+  color: var(--text);
   border: none;
   padding: 0.85rem 2rem;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s;
 }
 
 .btn-primary:hover {
-  background: var(--accent);
+  background: #8B2218;
 }
 
 .btn-secondary {
@@ -267,7 +269,7 @@ nav .nav-links a:hover {
   font-weight: 500;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--red);
   margin-bottom: 0.75rem;
   display: block;
 }
@@ -416,7 +418,7 @@ nav .nav-links a:hover {
   content: '✓';
   position: absolute;
   left: 0;
-  color: var(--accent);
+  color: var(--red);
   font-size: 0.8rem;
 }
 
