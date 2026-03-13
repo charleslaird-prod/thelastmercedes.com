@@ -190,6 +190,21 @@ nav .nav-links a:hover {
   letter-spacing: 0.02em;
 }
 
+.hero-real {
+  display: inline-block;
+  font-size: 0.25em;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--red);
+  transform: rotate(-45deg);
+  transform-origin: left bottom;
+  vertical-align: top;
+  position: relative;
+  top: 0.15em;
+  margin-left: 0.2em;
+}
+
 .hero-manifesto {
   max-width: 560px;
   margin: 0 auto 3rem;
