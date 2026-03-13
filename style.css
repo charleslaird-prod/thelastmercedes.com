@@ -197,12 +197,12 @@ nav .nav-links a:hover {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--red);
-  transform: rotate(90deg);
-  transform-origin: left top;
+  transform: rotate(-45deg);
+  transform-origin: left bottom;
   vertical-align: top;
   position: relative;
   top: 0.1em;
-  margin-left: 0.3em;
+  margin-left: 0.6em;
 }
 
 .hero-manifesto {
