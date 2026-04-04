@@ -49,7 +49,7 @@
 
       <ul class="nav-links">
         <li><a href="#philosophy">Philosophy</a></li>
-        <li><a href="#parts">Parts</a></li>
+        <li><a href="#tlm-ebay">Parts</a></li>
         <li><a href="#garage">Garage</a></li>
         <li><a href="#club">Club</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -74,7 +74,7 @@
 
       <div class="cta-group">
         <a href="#club" class="btn-primary">Join the Club</a>
-        <a href="#parts" class="btn-secondary">Browse Parts</a>
+        <a href="#tlm-ebay" class="btn-secondary">Browse Parts</a>
       </div>
     </div>
   </section>
@@ -107,34 +107,183 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════ PARTS -->
-  <section id="parts" class="section">
+  <!-- ═══════════════════════════════════════ PARTS / EBAY -->
+  <section id="tlm-ebay" class="section" style="background:#fff; border-top:1px solid #2E2E2E; border-bottom:1px solid #2E2E2E;">
     <div class="section-inner">
-      <span class="section-label">Sourced &amp; Tested</span>
-      <h2 class="section-title">Parts for The Last Mercedes</h2>
+      <span class="section-label">Parts For Sale</span>
+      <h2 class="section-title" style="color:#1A1A1A;">Active eBay Listings</h2>
 
-      <p class="parts-desc">
-        We maintain a growing inventory of new-old-stock, OEM-sourced, and carefully vetted aftermarket parts for the W123, W124, W126, W201, W116, and W107 platforms. No guesswork. No Chinese reproductions unless we've tested them ourselves and say so clearly.
-      </p>
+      <!-- Carousel -->
+      <div id="ebay-carousel" style="margin-bottom:2.5rem;">
 
-      <ul class="parts-list">
-        <li>Fuel system — pumps, injectors, accumulators</li>
-        <li>Suspension — control arms, bushings, ball joints</li>
-        <li>Cooling — thermostats, hoses, radiators</li>
-        <li>Brake system — calipers, rotors, master cylinders</li>
-        <li>Electrical — relays, switches, wiring harness sections</li>
-        <li>Engine seals, gaskets &amp; timing components</li>
-        <li>Interior trim — door cards, headliners, seat hardware</li>
-        <li>Body &amp; glass — seals, clips, chrome trim</li>
-        <li>Transmission service kits — auto &amp; manual</li>
-        <li>Climate control — A/C components, blower motors</li>
-        <li>Exhaust — manifolds, downpipes, mounts</li>
-        <li>Filters &amp; service consumables</li>
-      </ul>
+        <div class="ebay-card active">
+          <div class="ebay-card-inner">
+            <div class="ebay-card-labels">
+              <span class="ebay-badge used">Used — Good</span>
+              <span class="ebay-badge bin">Buy It Now</span>
+            </div>
+            <h3 class="ebay-card-title">Bosch Alternator — W124 300E / 300CE</h3>
+            <p class="ebay-card-desc">OEM Bosch unit pulled from a 1991 300E with 78k miles. Bench-tested, output verified. Includes pulley.</p>
+            <div class="ebay-card-price">$145.00 <span>· Free shipping</span></div>
+          </div>
+        </div>
 
-      <a href="mailto:info@thelastmercedes.com" class="btn-primary">Browse Available Parts</a>
+        <div class="ebay-card">
+          <div class="ebay-card-inner">
+            <div class="ebay-card-labels">
+              <span class="ebay-badge rebuilt">Rebuilt — Tested</span>
+              <span class="ebay-badge bin">Buy It Now</span>
+            </div>
+            <h3 class="ebay-card-title">Front Brake Caliper Pair — W126 420SEL / 560SEL</h3>
+            <p class="ebay-card-desc">Professionally rebuilt fronts — pistons freed, bores honed, all seals and boots replaced. Ready to install.</p>
+            <div class="ebay-card-price">$210.00 <span>· Free shipping · Pair</span></div>
+          </div>
+        </div>
+
+        <div class="ebay-card">
+          <div class="ebay-card-inner">
+            <div class="ebay-card-labels">
+              <span class="ebay-badge oem">OEM — Driver's Side</span>
+              <span class="ebay-badge auction">Auction</span>
+            </div>
+            <h3 class="ebay-card-title">OEM Hella Headlight Assembly — W123 240D / 300D</h3>
+            <p class="ebay-card-desc">Original Hella unit from a 1983 240D. Glass clear, reflector excellent. Correct trim ring included.</p>
+            <div class="ebay-card-price">$88.00 <span>· Current bid · 3 bids</span></div>
+          </div>
+        </div>
+
+        <div class="ebay-card">
+          <div class="ebay-card-inner">
+            <div class="ebay-card-labels">
+              <span class="ebay-badge nos">New Old Stock</span>
+              <span class="ebay-badge bin">Buy It Now</span>
+            </div>
+            <h3 class="ebay-card-title">Bosch Fuel Pump Kit — W201 190E 2.3 / 2.6</h3>
+            <p class="ebay-card-desc">NOS Bosch in-tank fuel pump kit. Pump, filter, strainer, and all seals. Pulled from dealer overstock.</p>
+            <div class="ebay-card-price">$175.00 <span>· Free shipping · Complete kit</span></div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="ebay-carousel-controls">
+          <button class="ebay-arrow" id="ebay-prev">&#8592;</button>
+          <div class="ebay-dots">
+            <button class="ebay-dot active" data-i="0"></button>
+            <button class="ebay-dot" data-i="1"></button>
+            <button class="ebay-dot" data-i="2"></button>
+            <button class="ebay-dot" data-i="3"></button>
+          </div>
+          <button class="ebay-arrow" id="ebay-next">&#8594;</button>
+        </div>
+      </div>
+
+      <!-- Stats row -->
+      <div class="ebay-stats">
+        <div class="ebay-stat"><strong>105</strong><span>Items Sold</span></div>
+        <div class="ebay-stat"><strong>100%</strong><span>Positive Feedback</span></div>
+        <div class="ebay-stat"><strong>106</strong><span>Feedback Ratings</span></div>
+      </div>
+
+      <!-- CTA -->
+      <div style="text-align:center; margin-top:3rem;">
+        <a href="https://ebay.us/m/jvuhIs" target="_blank" rel="noopener" class="btn-primary" style="font-size:0.85rem; letter-spacing:0.1em;">
+          View All Listings on eBay &rarr;
+        </a>
+      </div>
     </div>
   </section>
+
+  <style>
+    /* ── eBay section ── */
+    .ebay-card { display: none; }
+    .ebay-card.active { display: block; }
+    .ebay-card-inner {
+      border: 1px solid #E0DDD8;
+      padding: 2rem 2.25rem;
+      background: #FAFAF8;
+    }
+    .ebay-card-labels { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+    .ebay-badge {
+      font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; padding: 0.25rem 0.6rem;
+    }
+    .ebay-badge.used    { background:#F5F0E8; color:#7A6A50; border:1px solid #E0D8CC; }
+    .ebay-badge.rebuilt { background:#EAF2EA; color:#2D6A2D; border:1px solid #C0DAC0; }
+    .ebay-badge.oem     { background:#EAF0FA; color:#1A4A8A; border:1px solid #BACDE8; }
+    .ebay-badge.nos     { background:#F0EAF5; color:#5A2D8A; border:1px solid #D8BAEC; }
+    .ebay-badge.bin     { background:#0A0A0A; color:#F0EDE8; }
+    .ebay-badge.auction { background:#F5AF02; color:#333; }
+    .ebay-card-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.6rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.03em; color: #1A1A1A; margin-bottom: 0.5rem; line-height: 1.15;
+    }
+    .ebay-card-desc { font-size: 0.9rem; color: #6B6B6B; margin-bottom: 1.25rem; line-height: 1.6; }
+    .ebay-card-price {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.75rem; font-weight: 700; color: #1A1A1A;
+    }
+    .ebay-card-price span { font-size: 0.85rem; font-weight: 400; color: #8A8A8A; font-family: 'Inter', sans-serif; }
+    .ebay-carousel-controls {
+      display: flex; align-items: center; justify-content: center;
+      gap: 1.25rem; margin-top: 1.25rem;
+    }
+    .ebay-dots { display: flex; gap: 0.5rem; align-items: center; }
+    .ebay-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: #D0CCC6; border: none; cursor: pointer; padding: 0;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .ebay-dot.active { background: #A02820; transform: scale(1.4); }
+    .ebay-arrow {
+      background: none; border: 1px solid #D0CCC6; color: #6B6B6B;
+      width: 34px; height: 34px; cursor: pointer; font-size: 1rem;
+      display: flex; align-items: center; justify-content: center;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .ebay-arrow:hover { border-color: #1A1A1A; color: #1A1A1A; }
+    .ebay-stats {
+      display: flex; justify-content: center; gap: 0;
+      border: 1px solid #E0DDD8; margin-top: 2.5rem;
+      flex-wrap: wrap;
+    }
+    .ebay-stat {
+      flex: 1 1 120px; text-align: center;
+      padding: 1.25rem 1rem; border-right: 1px solid #E0DDD8;
+    }
+    .ebay-stat:last-child { border-right: none; }
+    .ebay-stat strong {
+      display: block; font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.6rem; font-weight: 700; color: #1A1A1A;
+    }
+    .ebay-stat span {
+      display: block; font-size: 0.65rem; font-weight: 500;
+      letter-spacing: 0.15em; text-transform: uppercase; color: #8A8A8A; margin-top: 0.15rem;
+    }
+    @media (max-width: 600px) {
+      .ebay-card-inner { padding: 1.25rem; }
+      .ebay-stat { flex: 1 1 50%; }
+      .ebay-stat:nth-child(2) { border-right: none; }
+    }
+  </style>
+
+  <script>
+  (function(){
+    var cards = document.querySelectorAll('.ebay-card');
+    var dots  = document.querySelectorAll('.ebay-dot');
+    var cur   = 0, total = cards.length, timer;
+    function show(n) {
+      cards[cur].classList.remove('active'); dots[cur].classList.remove('active');
+      cur = (n + total) % total;
+      cards[cur].classList.add('active'); dots[cur].classList.add('active');
+    }
+    function reset() { clearInterval(timer); timer = setInterval(function(){ show(cur+1); }, 5000); }
+    document.getElementById('ebay-prev').onclick = function(){ show(cur-1); reset(); };
+    document.getElementById('ebay-next').onclick = function(){ show(cur+1); reset(); };
+    dots.forEach(function(d){ d.onclick = function(){ show(+d.dataset.i); reset(); }; });
+    reset();
+  })();
+  </script>
 
   <!-- ═══════════════════════════════════════ GARAGE -->
   <section id="garage" class="section">
@@ -270,6 +419,8 @@
       </div>
     </div>
   </footer>
+
+
 
 </body>
 </html>
